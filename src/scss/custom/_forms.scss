@@ -212,7 +212,6 @@ textarea {
   }
 
   [type='checkbox'] {
-    + label::after,
     + label::before {
       content: '';
       left: 0;
@@ -224,17 +223,6 @@ textarea {
     }
 
     + label::before {
-      top: 0;
-      width: 17px;
-      height: 17px;
-      border: 1px solid #e6e9f2;
-      border-radius: 1px;
-      margin: 2px 5px;
-      transform: rotateZ(37deg);
-      transform-origin: 100% 100%;
-    }
-
-    + label::after {
       border-radius: 4px;
       height: 20px;
       width: 20px;
@@ -243,51 +231,41 @@ textarea {
     }
 
     &:checked + label::before {
-      top: 6px;
-      left: 1px;
-      width: 8px;
-      height: 13px;
-      border-style: solid;
-      border-width: 2px;
-      border-color: transparent #fff #fff transparent;
-      transform: rotate(40deg);
-      backface-visibility: hidden;
-      transform-origin: 100% 100%;
-      opacity: 0.8;
-    }
-
-    &:checked + label::after {
       border-color: $primary;
-      background-color: $primary;
       z-index: 0;
     }
 
-    &:not(:checked) + label::after {
+    &:not(:checked) + label::before {
       background-color: transparent;
       border-color: #5c6f82;
       z-index: 0;
     }
 
-    &:not(:checked) + label::before {
-      width: 0;
-      height: 0;
-      border-color: transparent;
-      left: 6px;
-      top: 10px;
-    }
-
-    &:disabled + label {
-      cursor: not-allowed;
-    }
-
-    &:disabled:not(:checked) + label::after {
+    &:disabled:not(:checked) + label::before {
       border-color: #e6e9f2;
       background-color: #fff;
     }
 
-    &:disabled:checked + label::after {
+    &:disabled:checked + label::before {
       background-color: #e6e9f2;
       border-color: #e6e9f2;
+    }
+
+    &:checked + label::before {
+      border-radius: 2px;
+      top:-2px;
+      width: 12px;
+      height: 20px;
+      border-style: solid;
+      border-width: 2px;
+      border-color: transparent $primary $primary transparent;
+      transform: rotate(40deg);
+      backface-visibility: hidden;
+      transform-origin: 100% 100%;
+    }
+
+    &:disabled + label {
+      cursor: not-allowed;
     }
 
     //focus

@@ -62,6 +62,10 @@ $gray-disabled: hsb(225, 5, 95) !default;
 $gray-label-disabled: hsb(222, 5, 79) !default;
 $gray-border-disabled: hsb(224, 8, 95) !default;
 
+$granata-unipv : hsb(344, 77, 69) !default;
+$lightblue-unipv : hsb(206, 83, 72) !default;
+$kleinblue-unipv : hsb(223, 100, 65) !default;
+
 $colors: () !default;
 $colors: map-merge(
   (
@@ -82,12 +86,15 @@ $colors: map-merge(
     'gray-secondary': $gray-secondary,
     'gray-tertiary': $gray-tertiary,
     'gray-quaternary': $gray-quaternary,
+    'granata-unipv' : $granata-unipv,
+    'lightblue-unipv' : $lightblue-unipv,
+    'kleinblue-unipv' : $kleinblue-unipv,
   ),
   $colors
 );
 
 // Main Palette
-$primary: $blue !default;
+$primary: $granata-unipv !default;
 $secondary: $gray-secondary !default;
 
 // Border Color
@@ -126,9 +133,9 @@ $theme-colors: map-merge(
 );
 
 // PRIMARY COLORS DEFINITION //
-$primary-h: 210;
-$primary-s: 100;
-$primary-b: 80;
+$primary-h: 344;
+$primary-s: 77;
+$primary-b: 69;
 
 $color-primary: hsb($primary-h, $primary-s, $primary-b) !default;
 $white: hsb(255, 255, 255) !default;

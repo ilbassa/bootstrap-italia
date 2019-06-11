@@ -6,6 +6,10 @@
   margin: 1.75rem 0 1rem;
   border-radius: 8px;
 
+  &.centered{
+    margin: auto;
+  }
+
   // Highlights version
   &.callout-highlight {
     border: none;
@@ -65,7 +69,7 @@
     }
     // text
     p {
-      font-size: 0.778rem;
+      //MB font-size: 0.778rem;
       line-height: 1.333rem;
       color: $neutral-1-a10;
     }
@@ -195,8 +199,8 @@
 
   //text
   p {
-    font-family: $font-family-serif;
-    font-size: 0.889rem;
+    //MB font-family: $font-family-serif;
+    //MB     font-size: 0.889rem;
     color: $neutral-1-a7;
     &:last-child {
       margin: 0;
@@ -322,7 +326,8 @@ _:-ms-fullscreen,
     // More version
     &.callout-more {
       p {
-        font-size: 0.722rem;
+        //MB font-size: 0.722rem;
+        font-size: 0.9rem;
       }
     }
   }
