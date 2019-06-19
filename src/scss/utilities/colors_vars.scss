@@ -54,7 +54,7 @@ $yellow-accessible: hsb(44, 100, 59) !default;
 $green-accessible: hsb(159, 100, 53) !default;
 
 $gray-primary: hsb(210, 38.9, 44.3) !default;
-$gray-secondary: hsb(210, 29, 51) !default;
+$gray-secondary: hsb(216, 3, 52) !default;
 $gray-tertiary: hsb(205, 35, 54) !default;
 $gray-quaternary: hsb(238, 1, 100) !default;
 $gray-border: hsb(240, 1, 70) !default;
@@ -135,7 +135,7 @@ $theme-colors: map-merge(
 // PRIMARY COLORS DEFINITION //
 $primary-h: 344;
 $primary-s: 77;
-$primary-b: 69;
+$primary-b: 79;
 
 $color-primary: hsb($primary-h, $primary-s, $primary-b) !default;
 $white: hsb(255, 255, 255) !default;
