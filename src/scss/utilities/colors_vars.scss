@@ -2,8 +2,8 @@
 // è lo spazio colore scelto per ottenere le varianti colore della tonalità primaria.
 
 // Color system
-$black: rgb(0, 0, 0) !default;
-$white: rgb(255, 255, 255) !default;
+$black: hsl(0, 0, 0) !default;
+$white: hsl(0, 0, 100) !default;
 
 $gray-100: hsb(225, 0, 90) !default;
 $gray-200: hsb(225, 0, 80) !default;
@@ -40,7 +40,6 @@ $primary-h: 344;
 $primary-s: 77;
 $primary-b: 79;
 
-
 $primary: hsb($primary-h, $primary-s, $primary-b) !default;
 
 $indigo: hsb(243, 70, 100) !default;
@@ -55,6 +54,9 @@ $cyan: hsb(178, 100, 100) !default;
 $blue: hsb(210, 100, 90) !default;
 $light: hsb(255, 5, 95) !default;
 $dark: hsb(210, 70, 30) !default;
+
+$yiq-text-light: $white !default;
+$yiq-text-dark: $black !default;
 
 $red-accessible: hsb(351, 75, 85) !default;
 $orange-accessible: hsb(36, 100, 65) !default;
@@ -78,7 +80,6 @@ $secondary: $gray-secondary !default;
 $colors: () !default;
 $colors: map-merge(
   (
-    'italia': $italia,
     'indigo': $indigo,
     'purple': $purple,
     'pink': $pink,
@@ -136,9 +137,6 @@ $theme-colors: map-merge(
   ),
   $theme-colors
 );
-
-
-$white: hsb(255, 255, 255) !default;
 
 // ACCENT COLORS DEFINITIONS
 // analoghi
