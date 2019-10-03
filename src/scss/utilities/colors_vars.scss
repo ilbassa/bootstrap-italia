@@ -1,7 +1,10 @@
 // HSB (https://it.wikipedia.org/wiki/Hue_Saturation_Brightness, coincidente con il modello HSV)
 // è lo spazio colore scelto per ottenere le varianti colore della tonalità primaria.
+
 // Color system
+$black: rgb(0, 0, 0) !default;
 $white: rgb(255, 255, 255) !default;
+
 $gray-100: hsb(225, 0, 90) !default;
 $gray-200: hsb(225, 0, 80) !default;
 $gray-300: hsb(225, 0, 70) !default;
@@ -11,8 +14,6 @@ $gray-600: hsb(225, 0, 40) !default;
 $gray-700: hsb(225, 0, 30) !default;
 $gray-800: hsb(225, 0, 20) !default;
 $gray-900: hsb(225, 0, 10) !default;
-
-$black: rgb(0, 0, 0) !default;
 
 $grays: () !default;
 $grays: map-merge(
@@ -34,7 +35,14 @@ $grays: map-merge(
   @return map-get($mains, $key);
 }
 
-$italia: hsb(210, 100, 80) !default;
+// PRIMARY COLORS DEFINITION //
+$primary-h: 344;
+$primary-s: 77;
+$primary-b: 79;
+
+
+$primary: hsb($primary-h, $primary-s, $primary-b) !default;
+
 $indigo: hsb(243, 70, 100) !default;
 $purple: hsb(243, 40, 100) !default;
 $pink: hsb(350, 30, 100) !default;
@@ -62,9 +70,10 @@ $gray-disabled: hsb(225, 5, 95) !default;
 $gray-label-disabled: hsb(222, 5, 79) !default;
 $gray-border-disabled: hsb(224, 8, 95) !default;
 
-$granata-unipv : hsb(344, 77, 69) !default;
 $lightblue-unipv : hsb(206, 83, 72) !default;
 $kleinblue-unipv : hsb(223, 100, 65) !default;
+
+$secondary: $gray-secondary !default;
 
 $colors: () !default;
 $colors: map-merge(
@@ -92,10 +101,6 @@ $colors: map-merge(
   ),
   $colors
 );
-
-// Main Palette
-$primary: $granata-unipv !default;
-$secondary: $gray-secondary !default;
 
 // Border Color
 $border-color: $gray-border;
@@ -132,12 +137,7 @@ $theme-colors: map-merge(
   $theme-colors
 );
 
-// PRIMARY COLORS DEFINITION //
-$primary-h: 344;
-$primary-s: 77;
-$primary-b: 79;
 
-$color-primary: hsb($primary-h, $primary-s, $primary-b) !default;
 $white: hsb(255, 255, 255) !default;
 
 // ACCENT COLORS DEFINITIONS
