@@ -6,6 +6,10 @@
   margin: 1.75rem 0 1rem;
   border-radius: 8px;
 
+  &.callout-lg{
+    max-width: 100%;
+  }
+
   // Highlights version
   &.callout-highlight {
     border: none;
